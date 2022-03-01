@@ -1,8 +1,15 @@
+let db = require('../database/models')
+
 module.exports = {
+
     index: (req, res) => {
-        res.render('index', {
-            title: 'FMS - Inicio',
-            session: req.session,
-        })
+        db.Leagues.findAll()
+            .then(league => {
+                res.render('index', {
+                    title: 'FMS - Inicio',
+                    league,
+                })
+            })
+
     }
 }
