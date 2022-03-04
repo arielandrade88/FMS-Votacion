@@ -1,0 +1,35 @@
+<div class="mcs__container menu__container">
+
+  <div class="mc__avatar">
+    <img class="mcs__image" src="" alt="">
+  </div>
+
+  <div class="mcs__versus">
+
+    <select name="mc" id="selectMc" class="input__select">
+      <% mc.forEach(element=> { %>
+        <option value="<%- element.id %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+    </select>
+
+    <div class="vs">
+      <p>VS</p>
+    </div>
+
+    <select name="" id="" class="input__select">
+      <% mc.forEach(element=> { %>
+        <option value="<%= element.image %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+    </select>
+
+  </div>
+
+  <div class="mc__avatar">
+    <img class="mcs__image" src="" alt="">
+  </div>
+
+</div>
