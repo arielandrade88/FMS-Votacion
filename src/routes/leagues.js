@@ -1,11 +1,11 @@
 let express = require('express');
 let router = express.Router();
 let {
-  leagues
+  league
 } = require('../controllers/leaguesController');
 
 
 /* LEAGUES */
-router.get("/liga/:liga", leagues)
+router.get("/liga/:league", league)
 
 module.exports = router;
