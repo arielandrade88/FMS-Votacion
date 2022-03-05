@@ -1,35 +1,112 @@
 <div class="mcs__container menu__container">
 
   <div class="mc__avatar">
-    <img class="mcs__image" src="" alt="">
+    <img id="mc-image1" class="mcs__image" src="/images/imgs-mcs/default-image.png" alt="">
   </div>
 
   <div class="mcs__versus">
 
-    <select name="mc" id="selectMc" class="input__select">
-      <% mc.forEach(element=> { %>
-        <option value="<%- element.id %> ">
+    <select name="mc" id="selectMc1" class="input__select">
+      <option value="default">Seleccinar MC 1</option>
+      <% if (country == 'Argentina') { %>
+        <% Argentina.forEach(element=> { %>
+        <option value="<%- element.name %> ">
           <%= element.name %>
         </option>
         <% }) %>
+      <% } %>
+      <% if (country == 'Chile') { %>
+        <% Chile.forEach(element=> { %>
+        <option value="<%- element.name %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+      <% } %>
+      <% if (country == 'Colombia') { %>
+        <% Colombia.forEach(element=> { %>
+        <option value="<%- element.name %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+      <% } %>
+      <% if (country == 'España') { %>
+        <% España.forEach(element=> { %>
+        <option value="<%- element.name %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+      <% } %>
+      <% if (country == 'México') { %>
+        <% Mexico.forEach(element=> { %>
+        <option value="<%- element.name %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+      <% } %>
+      <% if (country == 'Perú') { %>
+        <% Peru.forEach(element=> { %>
+        <option value="<%- element.name %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+      <% } %>
+     
     </select>
-
+<h5> </h5>
     <div class="vs">
       <p>VS</p>
     </div>
 
-    <select name="" id="" class="input__select">
-      <% mc.forEach(element=> { %>
-        <option value="<%= element.image %> ">
+    <select name="" id="selectMc2" class="input__select">
+      <option value="default">Seleccinar MC 2</option>
+      <% if (country == 'Argentina') { %>
+        <% Argentina.forEach(element=> { %>
+        <option value="<%- element.name %> ">
           <%= element.name %>
         </option>
         <% }) %>
+      <% } %>
+      <% if (country == 'Chile') { %>
+        <% Chile.forEach(element=> { %>
+        <option value="<%- element.name %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+      <% } %>
+      <% if (country == 'Colombia') { %>
+        <% Colombia.forEach(element=> { %>
+        <option value="<%- element.name %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+      <% } %>
+      <% if (country == 'España') { %>
+        <% España.forEach(element=> { %>
+        <option value="<%- element.name %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+      <% } %>
+      <% if (country == 'México') { %>
+        <% Mexico.forEach(element=> { %>
+        <option value="<%- element.name %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+      <% } %>
+      <% if (country == 'Perú') { %>
+        <% Peru.forEach(element=> { %>
+        <option value="<%- element.name %> ">
+          <%= element.name %>
+        </option>
+        <% }) %>
+      <% } %>
     </select>
 
   </div>
 
-  <div class="mc__avatar">
-    <img class="mcs__image" src="" alt="">
+  <div id="mc-image2" class="mc__avatar">
+    <img id="mc-image1" class="mcs__image" src="/images/imgs-mcs/default-image.png" alt="">
   </div>
 
 </div>
