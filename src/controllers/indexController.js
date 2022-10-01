@@ -1,15 +1,13 @@
-let db = require('../database/models')
+let {getLeagues} = require('../database/dataBase');
 
 module.exports = {
 
     index: (req, res) => {
-        db.Leagues.findAll()
-            .then(league => {
+        league = getLeagues;          
                 res.render('index', {
                     title: 'FMS - Inicio',
                     league,
                 })
-            })
-
+            }
+            
     }
-}

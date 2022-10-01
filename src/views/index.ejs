@@ -1,12 +1,14 @@
 <%- include('./partials/head.ejs') %>
 
   <body>
+    <main class="index-main">
+      <% league.forEach(element=> { %>
+        <a href="/liga/<%= element.name %>">
+          <img class="logo-index" src="/images/imgs-logo-FMS/<%= element.image %> " alt="">
+        </a>
+        <% }) %>
+    </main>
 
-    <% league.forEach(element=> { %>
-      <a href="/liga/<%= element.name %>">
-        <img src="/images/imgs-logo-FMS/<%= element.image %> " alt="">
-      </a>
-      <% }) %>
 
   </body>
 
